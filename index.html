@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0023)https://jonbarron.info/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="“width=800”">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="https://jonbarron.info/seal_icon.png">
+  <title>Mingdong Wu</title>
+  
+  <link href="./QingnanFan_files/css" rel="stylesheet" type="text/css">
+  <script charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/btype.js"></script></head>
+  <body>
+  <!-- table1: my profile -->
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+        <td width="67%" valign="middle">
+
+        <p align="center">
+          <name>Mingdong Wu</name>
+        </p>
+
+        <p>
+          I am a PhD student in the <a href="https://cs.pku.edu.cn/English/Home.htm">School of Computer Science</a> in <a href="http://english.pku.edu.cn/">Peking University</a>, advised by <a href="https://https://zsdonghao.github.io/"> Prof. Hao Dong</a>.
+
+          I received my bachelor degree in 2021, from <a href="https://cfcs.pku.edu.cn/english/research/turingprogram/introduction1/index.htm">Turing Class</a> in <a href="http://english.pku.edu.cn/">Peking University</a>.
+        </p>
+        <p>
+        	My research interest lies in robot learning, generative models, and reinforcement learning.
+        	I aim to build intelligent embodied agents that automatically discover and perform tasks without human specification.
+        </p>
+
+        <p align="center">
+          <a href="mailto:wmingd@pku.edu.cn">Email</a> &nbsp/&nbsp
+          <a href="https://scholar.google.com/citations?hl=en&user=MPfBNuIAAAAJ">Google Scholar</a>
+        </p>
+        </td>
+        <td width="33%">
+        <img src="./photo.jpg" width="120px">
+        </td>
+      </tr>
+      </tbody></table>
+
+
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tbody><tr>
+          <h1>Publications</h1>
+      </tr>
+      </tbody></table>
+
+  <!-- table2: papers -->
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tbody>
+      <!-- TarGF -->
+      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="25%">
+          <div class="one">
+          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./targf.gif" width="180px"></div>
+          <img src="./targf.gif" width="180px">
+          </div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+      <a href="https://arxiv.org/abs/2209.00853">
+              <papertitle>TarGF: Learning Target Gradient Field for Object Rearrangement</papertitle>
+      </a>
+      <br>
+      <strong>Mingdong Wu</strong>, 
+      <a href="https://fangweizhong.xyz/">Fangwei Zhong</a>, 
+      Yulong Xia,
+      <a href="https://zsdonghao.github.io/">Hao Dong</a>.
+      <br>
+          <em>NeurIPS</em>, 2022 <br>
+          <a href="https://arxiv.org/abs/2209.00853">paper link</a>
+          /
+          <a href="https://sites.google.com/view/targf">project page</a>
+          / 
+          <a href="./targf.bib">bibtex</a>
+          <p></p>
+          <p> 
+            We study object rearrangement without explicit goal specification.
+            The agent is given examples from a target distribution and aims at rearranging objects to increase the likelihood of the distribution.
+            Our key idea is to learn a target gradient field that indicates the fastest direction to increase the likelihood from examples via score-matching.
+            We further incoporates the target gradient field with reinforcement learning or model-based planner to tackle this task in model-free and model-based setting respectively.
+            Our method significantly outperforms the state-of-the-art methods in the quality of the terminal state, the efficiency of the control process, and scalability.
+          </p>
+        </td>
+      </tr>
+      
+      <!-- DualGF -->
+
+  </tbody></table>
+  
+
+
+
+</body></html>
