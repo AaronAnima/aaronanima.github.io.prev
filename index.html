@@ -108,6 +108,60 @@
   <!-- table2: papers -->
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     <tbody>
+      <!-- MAS-GF -->
+      
+      <!-- AnyPose -->
+      
+      <!-- GraspGF -->
+      
+      <!-- DualGF -->
+
+      <!-- GFPose -->
+      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="25%">
+          <div class="one">
+          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/gfpose.jpeg" width="180px"></div>
+          <img src="./imgs/gfpose.jpeg" width="180px">
+          </div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+      <a href="https://arxiv.org/abs/2212.08641">
+              <papertitle>GFPose: Learning 3D Human Pose Prior with Gradient Fields</papertitle>
+      </a>
+      <br>
+      Hai Ci,
+      <strong>Mingdong Wu</strong>, 
+      Wentao Zhu,
+      Xiaoxuan Ma,
+      Hao Dong,
+      Fangwei Zhong,
+      Yizhou Wang,
+      <br>
+          <em>CVPR</em>, 2023 <br>
+          <a href="https://arxiv.org/abs/2212.08641">paper link</a>
+          /
+          <a href="https://sites.google.com/view/gfpose/">project page</a>
+          / 
+          <a href="./bibs/gfpose.bib">bibtex</a>
+          <p></p>
+          <p> 
+            GFPose is a <b>unified 3D human pose prior</b> model that can be easily used for various applications, e.g., 3D human pose estimation, pose denoising and generation. 
+            Our key idea is to estimate the gradient field (a.k.a, score) of the perturbed human pose. 
+            Scores encode "what a reasonable pose looks like." 
+            We can leverage them to adjust poses to be more plausible and feasible to a task specification. 
+          </p>
+        </td>
+      </tr>
+
       <!-- TarGF -->
       <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
         <td width="25%">
@@ -145,59 +199,12 @@
           <a href="./bibs/targf.bib">bibtex</a>
           <p></p>
           <p> 
-            We study object rearrangement </strong>without explicit goal specification</strong>.
+            We study object rearrangement <b>without explicit goal specification</b>.
             The agent is given examples from a target distribution and aims at rearranging objects to increase the likelihood of the distribution.
             Our key idea is to learn a target gradient field that indicates the fastest direction to increase the likelihood from examples via score-matching.
           </p>
         </td>
       </tr>
-      <!-- GFPose -->
-      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="25%">
-          <div class="one">
-          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/gfpose.jpeg" width="180px"></div>
-          <img src="./imgs/gfpose.jpeg" width="180px">
-          </div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="75%">
-      <a href="https://arxiv.org/abs/2212.08641">
-              <papertitle>GFPose: Learning 3D Human Pose Prior with Gradient Fields</papertitle>
-      </a>
-      Hai Ci,
-      <br>
-      <strong>Mingdong Wu</strong>, 
-      Wentao Zhu,
-      Xiaoxuan Ma,
-      Hao Dong,
-      Fangwei Zhong,
-      Yizhou Wang,
-      <br>
-          <em>CVPR</em>, 2023 <br>
-          <a href="https://arxiv.org/abs/2212.08641">paper link</a>
-          /
-          <a href="https://sites.google.com/view/gfpose/">project page</a>
-          / 
-          <a href="./bibs/gfpose.bib">bibtex</a>
-          <p></p>
-          <p> 
-            GFPose is a score-based 3D human pose prior model that can be easily used for various applications, e.g., 3D human pose estimation, pose denoising and generation. 
-            Our key idea is to estimate the gradient field (a.k.a, score) of the perturbed human pose. 
-            Scores encode "what a reasonable pose looks like." 
-            We can leverage them to adjust poses to be more plausible and feasible to a task specification. 
-          </p>
-        </td>
-      </tr>
-      
-      <!-- DualGF -->
 
   </tbody></table>
   
