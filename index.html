@@ -92,7 +92,7 @@
         </p>
         </td>
         <td width="33%">
-        <img src="./wmd.jpg" width="120px">
+        <img src="./wmd_2023.jpg" width="120px">
         </td>
       </tr>
       </tbody></table>
@@ -108,6 +108,10 @@
   <!-- table2: papers -->
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     <tbody>
+      <!-- GF Packing -->
+
+      <!-- Diffusion Affordance -->
+
       <!-- MAS-GF -->
       
       <!-- AnyPose -->
@@ -115,6 +119,92 @@
       <!-- GraspGF -->
       
       <!-- DualGF -->
+      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="25%">
+          <div class="one">
+          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/2023ICML-DualGF-min.png" width="180px"></div>
+          <img src="./imgs/2023ICML-DualGF-min.png" width="180px">
+          </div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+      <a href="https://arxiv.org/pdf/.pdf">
+              <papertitle>DualGF: Example-based Planning via Dual Gradient Fields</papertitle>
+      </a>
+      <br>
+      <strong>Mingdong Wu</strong>, 
+      Fangwei Zhong, 
+      Yulong Xia, 
+      Yizhou Wang, 
+      Hao Dong
+      <br>
+          <em>Arxiv</em>, 2023 <br>
+          <a href="https://arxiv.org/pdf/.pdf">paper link</a>
+          /
+          <a href="https://sites.google.com/view/-coming-soon/">project page</a>
+          / 
+          <a href="./bibs/comming_soon.bib">bibtex</a>
+          <p></p>
+          <!-- <p> 
+            GFPose is a <b>unified 3D human pose prior</b> model that can be easily used for various applications, e.g., 3D human pose estimation, pose denoising and generation. 
+            Our key idea is to estimate the gradient field (a.k.a, score) of the perturbed human pose. 
+            We can leverage the gradient to adjust poses to be more plausible and feasible to a task specification. 
+          </p> -->
+        </td>
+      </tr>
+      
+      <!-- Visual-Audio -->
+      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="25%">
+          <div class="one">
+          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/2023RAL-Visual-Audio-Nav-min.png" width="180px"></div>
+          <img src="./imgs/2023RAL-Visual-Audio-Nav-min.png" width="180px">
+          </div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+      <a href="https://arxiv.org/pdf/.pdf">
+              <papertitle>Learning Semantic-Agnostic and Spatial-Aware Representation for Generalizable Visual-Audio Navigation</papertitle>
+      </a>
+      <br>
+      Hongcheng Wang, 
+      Yuxuan Wang, 
+      Fangwei Zhong, 
+      <strong>Mingdong Wu</strong>, 
+      Jianwei Zhang, 
+      Yizhou Wang, 
+      Hao Dong
+      <br>
+          <em>RAL</em>, 2023 <br>
+          <a href="https://arxiv.org/pdf/.pdf">paper link</a>
+          /
+          <a href="https://sites.google.com/view/-coming-soon/">project page</a>
+          / 
+          <a href="./bibs/comming_soon.bib">bibtex</a>
+          <p></p>
+          <!-- <p> 
+            GFPose is a <b>unified 3D human pose prior</b> model that can be easily used for various applications, e.g., 3D human pose estimation, pose denoising and generation. 
+            Our key idea is to estimate the gradient field (a.k.a, score) of the perturbed human pose. 
+            We can leverage the gradient to adjust poses to be more plausible and feasible to a task specification. 
+          </p> -->
+        </td>
+      </tr>
 
       <!-- GFPose -->
       <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
@@ -144,7 +234,7 @@
       Xiaoxuan Ma,
       Hao Dong,
       Fangwei Zhong,
-      Yizhou Wang,
+      Yizhou Wang
       <br>
           <em>CVPR</em>, 2023 <br>
           <a href="https://arxiv.org/abs/2212.08641">paper link</a>
