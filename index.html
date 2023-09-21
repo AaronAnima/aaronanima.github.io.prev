@@ -162,6 +162,127 @@
         </td>
       </tr> -->
       
+      <!-- (NeurIPS23) GenPose -->
+      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="25%">
+          <div class="one">
+          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/GenPose_V2.gif" width="220px"></div>
+          <img src="./imgs/GenPose_V2.gif" width="220px">
+          </div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+      <a href="https://arxiv.org/pdf/2306.10531v1.pdf">
+              <papertitle>GenPose: Generative Category-level Object Pose Estimation via Diffusion Models</papertitle>
+      </a>
+      <br>
+      Jiyao Zhang*,
+      <strong>Mingdong Wu*</strong>, 
+      Hao Dong
+      <br>
+          <em>NeurIPS</em>, 2023<br>
+          <a href="https://arxiv.org/pdf/2306.10531v1.pdf">paper link</a>
+          /
+          <a href="https://sites.google.com/view/genpose">project page</a>
+          /
+          <a href="https://github.com/Jiyao06/GenPose">codes</a>
+          / 
+          <a href="./bibs/genpose.bib">bibtex</a>
+          <p></p>
+          <p> 
+            We explore a pure generative approach to tackle the <b>multi-hypothesis issue</b> in 6D Category-level Object Pose Estimation. 
+            The key idea is to generate pose candidates using a score-based diffusion model and <b>filter out outliers</b> using an energy-based diffusion model. 
+            By aggregating the remaining candidates, we can obtain a robust and high-quality output pose.
+          </p>
+        </td>
+      </tr>
+      
+      <!-- (NeurIPS23) GraspGF -->
+      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="25%">
+          <div class="one">
+          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/graspgf.gif" width="220px"></div>
+          <img src="./imgs/graspgf.gif" width="220px">
+          </div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+      <a href="https://arxiv.org/abs/2309.06038">
+              <papertitle>GraspGF: Learning Score-based Grasping Primitive for Human-assisting Dexterous Grasping</papertitle>
+      </a>
+      <br>
+      Tianhao Wu,<strong>Mingdong Wu*</strong>, Jiyao Zhang, Yunchong Gan, Hao Dong
+      <br>
+          <em>NeurIPS</em>, 2023<br>
+          <a href="https://arxiv.org/abs/2309.06038">paper link</a>
+          /
+          <a href="https://sites.google.com/view/xxxx">project page</a>
+          /
+          <a href="https://github.com/xxxx">codes</a>
+          / 
+          <a href="./bibs/xxxx.bib">bibtex</a>
+          <p></p>
+          <p> 
+          </p>
+        </td>
+      </tr>
+      
+      
+      <!-- (NeurIPS23) Human-demand Navigation -->
+      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="25%">
+          <div class="one">
+          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/demand_nav.jpg" width="220px"></div>
+          <img src="./imgs/demand_nav.jpg" width="220px">
+          </div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="75%">
+      <a href="https://arxiv.org/abs/2309.08138">
+              <papertitle>Find What You Want: Learning Demand-conditioned Object Attribute Space for Demand-driven Navigation</papertitle>
+      </a>
+      <br>
+      Hongcheng Wang, Andy Guan Hong Chen, Xiaoqi Li, <strong>Mingdong Wu</strong>, Hao Dong
+      <br>
+          <em>NeurIPS</em>, 2023<br>
+          <a href="https://arxiv.org/abs/2309.08138">paper link</a>
+          /
+          <a href="https://sites.google.com/view/xxxx">project page</a>
+          /
+          <a href="https://github.com/xxxx">codes</a>
+          / 
+          <a href="./bibs/xxxx.bib">bibtex</a>
+          <p></p>
+          <p> 
+            The First Demand-driven Navigation Paper.
+          </p>
+        </td>
+      </tr>
+      
       <!-- (Siggraph Asia 23) GF Packing -->
       <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
         <td width="25%">
@@ -234,127 +355,6 @@
           <a href="./bibs/score_pa.bib">bibtex</a>
           <p></p>
           <p> 
-          </p>
-        </td>
-      </tr>
-      
-      <!-- (NeurIPS23) GraspGF -->
-      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="25%">
-          <div class="one">
-          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/graspgf.gif" width="220px"></div>
-          <img src="./imgs/graspgf.gif" width="220px">
-          </div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="75%">
-      <a href="https://arxiv.org/abs/2309.06038">
-              <papertitle>GraspGF: Learning Score-based Grasping Primitive for Human-assisting Dexterous Grasping</papertitle>
-      </a>
-      <br>
-      Tianhao Wu,<strong>Mingdong Wu*</strong>, Jiyao Zhang, Yunchong Gan, Hao Dong
-      <br>
-          <em>Arxiv</em>, 2023<br>
-          <a href="https://arxiv.org/abs/2309.06038">paper link</a>
-          /
-          <a href="https://sites.google.com/view/xxxx">project page</a>
-          /
-          <a href="https://github.com/xxxx">codes</a>
-          / 
-          <a href="./bibs/xxxx.bib">bibtex</a>
-          <p></p>
-          <p> 
-          </p>
-        </td>
-      </tr>
-      
-      
-      <!-- (NeurIPS23) Human-demand Navigation -->
-      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="25%">
-          <div class="one">
-          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/demand_nav.jpg" width="220px"></div>
-          <img src="./imgs/demand_nav.jpg" width="220px">
-          </div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="75%">
-      <a href="https://arxiv.org/abs/2309.08138">
-              <papertitle>Find What You Want: Learning Demand-conditioned Object Attribute Space for Demand-driven Navigation</papertitle>
-      </a>
-      <br>
-      Hongcheng Wang, Andy Guan Hong Chen, Xiaoqi Li, <strong>Mingdong Wu</strong>, Hao Dong
-      <br>
-          <em>Arxiv</em>, 2023<br>
-          <a href="https://arxiv.org/abs/2309.08138">paper link</a>
-          /
-          <a href="https://sites.google.com/view/xxxx">project page</a>
-          /
-          <a href="https://github.com/xxxx">codes</a>
-          / 
-          <a href="./bibs/xxxx.bib">bibtex</a>
-          <p></p>
-          <p> 
-            The First Demand-driven Navigation Paper.
-          </p>
-        </td>
-      </tr>
-      
-      <!-- (NeurIPS23) GenPose -->
-      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="25%">
-          <div class="one">
-          <div class="two" id="portrait_image" style="opacity: 0;"><img src="./imgs/GenPose_V2.gif" width="220px"></div>
-          <img src="./imgs/GenPose_V2.gif" width="220px">
-          </div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="75%">
-      <a href="https://arxiv.org/pdf/2306.10531v1.pdf">
-              <papertitle>GenPose: Generative Category-level Object Pose Estimation via Diffusion Models</papertitle>
-      </a>
-      <br>
-      Jiyao Zhang*,
-      <strong>Mingdong Wu*</strong>, 
-      Hao Dong
-      <br>
-          <em>Arxiv</em>, 2023<br>
-          <a href="https://arxiv.org/pdf/2306.10531v1.pdf">paper link</a>
-          /
-          <a href="https://sites.google.com/view/genpose">project page</a>
-          /
-          <a href="https://github.com/Jiyao06/GenPose">codes</a>
-          / 
-          <a href="./bibs/genpose.bib">bibtex</a>
-          <p></p>
-          <p> 
-            We explore a pure generative approach to tackle the <b>multi-hypothesis issue</b> in 6D Category-level Object Pose Estimation. 
-            The key idea is to generate pose candidates using a score-based diffusion model and <b>filter out outliers</b> using an energy-based diffusion model. 
-            By aggregating the remaining candidates, we can obtain a robust and high-quality output pose.
           </p>
         </td>
       </tr>
